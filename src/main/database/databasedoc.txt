@@ -1,0 +1,23 @@
+TABLE 	
+create table user(id INTEGER PRIMARY KEY AUTOINCREMENT, username VARCHAR(30), pk STRING, date VARCHAR(30));
+
+create table stock(
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	name TEXT NOT NULL,
+	abrev VARCHAR(5),
+	holdings DOUBLE(12,2) NOT NULL,	
+	avgcost DOUBLE(12,2) NOT NULL,
+	userid INTEGER,
+	FOREIGN KEY(userid) REFERENCES user(id)			
+);
+
+create table transactions(
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	date STRING,					 
+	amount DOUBLE(12,2) NOT NULL,			
+	cost DOUBLE(12,2) NOT NULL,	
+	userid INTEGER,
+	stockid INTEGER,
+	FOREIGN KEY(userid) REFERENCES users(id),
+	FOREIGN KEY(stockid) REFERENCES stocks(id)
+);
