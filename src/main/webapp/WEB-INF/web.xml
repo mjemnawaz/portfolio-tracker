@@ -1,0 +1,128 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Project2</display-name>
+  
+ <servlet>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<servlet-class>csci310.servlets.LoginServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>RegisterServlet</servlet-name>
+  	<servlet-class>csci310.servlets.RegisterServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>CSVServlet</servlet-name>
+  	<servlet-class>csci310.servlets.CSVServlet</servlet-class>
+  </servlet>
+  
+   <servlet>
+  	<servlet-name>DeleteStockServlet</servlet-name>
+  	<servlet-class>csci310.servlets.DeleteStockServlet</servlet-class>
+  </servlet>
+  
+   <servlet>
+  	<servlet-name>ListServlet</servlet-name>
+  	<servlet-class>csci310.servlets.ListServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>AddStockServlet</servlet-name>
+  	<servlet-class>csci310.servlets.AddStockServlet</servlet-class>
+  </servlet>
+  
+   <servlet>
+  	<servlet-name>LogoutServlet</servlet-name>
+  	<servlet-class>csci310.servlets.LogoutServlet</servlet-class>
+  </servlet>
+  
+   <servlet>
+  	<servlet-name>ValidTickerServlet</servlet-name>
+  	<servlet-class>csci310.servlets.ValidTickerServlet</servlet-class>
+  </servlet>
+  
+   <servlet>
+  	<servlet-name>HistoricalDataServlet</servlet-name>
+  	<servlet-class>csci310.servlets.HistoricalDataServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  <servlet-name>GraphHoldingsServlet</servlet-name>
+  <servlet-class>csci310.servlets.GraphHoldingsServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  <servlet-name>EarliestTransactionServlet</servlet-name>
+  <servlet-class>csci310.servlets.EarliestTransactionServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>RegisterServlet</servlet-name>
+  	<url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>CSVServlet</servlet-name>
+  	<url-pattern>/csv</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet-mapping>
+  	<servlet-name>DeleteStockServlet</servlet-name>
+  	<url-pattern>/deletestock</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+  	<servlet-name>ListServlet</servlet-name>
+  	<url-pattern>/list</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>AddStockServlet</servlet-name>
+  	<url-pattern>/addstock</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+  	<servlet-name>LogoutServlet</servlet-name>
+  	<url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>ValidTickerServlet</servlet-name>
+  	<url-pattern>/validTicker</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+  	<servlet-name>HistoricalDataServlet</servlet-name>
+  	<url-pattern>/HistoricalDataServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>GraphHoldingsServlet</servlet-name>
+  	<url-pattern>/GraphHoldingsServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>EarliestTransactionServlet</servlet-name>
+  	<url-pattern>/EarliestTransactionServlet</url-pattern>
+  </servlet-mapping>
+  
+  <filter>
+    <filter-name>AuthenticationFilter</filter-name>
+    <filter-class>csci310.servlets.AuthenticationFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>AuthenticationFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+</web-app>
