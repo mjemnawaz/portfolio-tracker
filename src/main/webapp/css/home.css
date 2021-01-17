@@ -1,0 +1,39 @@
+.pageHeader {
+	background-color: #787878;
+}
+
+.formatLink {
+	text-decoration: none;
+	color: #223843;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #223843;
+}
+
+.textColor {
+	color: #223843;
+}
+
+.textShadow {
+	text-shadow: 1px 1px #65AFFF;
+}
+
+.borderStyle {
+	border-radius: 10px;
+	box-shadow: 3px 3px 3px 3px #65AFFF;
+}
+
+#portfolioCard {
+	background-color: #65AFFF;
+}
+
+#historyCard {
+	background-color: #223843;
+	color: white;
+}
+
+#predictCard {
+	background-color: #9370DB;
+}

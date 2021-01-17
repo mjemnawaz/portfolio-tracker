@@ -1,0 +1,33 @@
+.titleColor {
+	color: #65AFFF;
+}
+
+#form-container {
+	background-color: #223843;
+	border-radius: 10px;
+	box-shadow: 3px 3px 3px 3px;
+}
+
+.label {
+	color: white;
+}
+
+.pageHeader {
+	background-color: #787878;
+}
+
+.textColor {
+	color: #223843;
+	text-shadow: 1px 1px #65AFFF;
+}
+
+.formatLink {
+	text-decoration: none;
+	color: #223843;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #223843;
+}
+
