@@ -1,3 +1,7 @@
+A stock portfolio tracking website. Includes sign up and login functinality, live stock price retrieval, portfolio data analysis, ability to add and remove stock purchases, ability to graph portfolio data.
+
+Note: API keys may be expired.
+
 # Project Repo Information
 
 Import this repository into Eclipse. This project provides everything needed to:
