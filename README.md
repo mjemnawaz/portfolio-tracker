@@ -1,4 +1,6 @@
-A stock portfolio tracking website. Includes sign up and login functinality, live stock price retrieval, portfolio data analysis, ability to add and remove stock purchases, ability to graph portfolio data.
+A CSCI-310 Project
+
+A stock portfolio website. Includes sign up and login functionality, UI design, live stock price retrieval, portfolio data analysis, ability to add and remove stock purchases, ability to graph portfolio data. Created with black-box testing with 100% code coverage for every function as well as Selenium tests for every feature.
 
 Note: API keys may be expired.
 
